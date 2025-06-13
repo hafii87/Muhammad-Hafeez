@@ -1,3 +1,2 @@
-git remote add origin https://github.com/<Muhammad-Hafeez>/Project-management-dashboard.git
-git branch -M main
-git push -u origin main
+ Hi, I'm Muhammed Hafeez ur Rehman
+🎓 Final Year Computer Science Student | 💻 Aspiring Project Manager | 🤖 AI & Web Enthusiast
