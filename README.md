@@ -1,1 +1,3 @@
-# Muhammad-Hafeez
+git remote add origin https://github.com/<Muhammad-Hafeez>/Project-management-dashboard.git
+git branch -M main
+git push -u origin main
