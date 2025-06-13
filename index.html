@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Personal Portfolio - Muhammad Hafeez Ur Rehman</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clean-pakistan">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work-experience">Work Experience</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" onclick="location.href='#contact'">Contact</button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Muhammad Hafeez Ur Rehman</span>
+          </h2>
+          <p class="text-muted">
+            Aspiring Project Manager with a Computer Science background and strong skills in planning, coordination, and communication. Led an AI-based web and mobile app as a final year project, combining technical execution with effective team management.
+          </p>
+          
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.webp" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- project section starts -->
+    <section id="clean-pakistan" class="projects-section py-5" style="background: linear-gradient(120deg,#f8e1f4 0%,#e0c3fc 100%);">
+  <div class="container d-flex flex-column align-items-center justify-content-center" style="min-height: 80vh;">
+    <div class="row justify-content-center w-100">
+      <!-- Project Card Start -->
+      <div class="col-12 d-flex align-items-stretch justify-content-center" style="margin-bottom:2rem;">
+        <div class="project-card shadow-lg p-4" style="background: #fff; border-radius: 2rem; transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s; box-shadow: 0 8px 32px 0 rgba(106,13,173,0.13), 0 2px 8px 0 rgba(0,0,0,0.07); min-height: 520px; display: flex; flex-direction: column; justify-content: center; max-width: 1700px; width: 98vw; margin: 0 auto;">
+          <h3 class="project-title mt-4 mb-3 text-center">Clean Pakistan: AI Waste Classification & Reporting System</h3>
+          <div class="d-flex flex-column align-items-center text-center">
+            <div class="mb-2" style="font-size:1.3rem; color:#222; font-weight:700;"><b>Role:</b> <span style="font-weight:700; color:#6a0dad;">Team Lead</span></div>
+            <div class="mb-3 d-flex flex-wrap justify-content-center gap-2">
+              <span class="badge tech-badge">MobileNetV2</span>
+              <span class="badge tech-badge">FastAPI</span>
+              <span class="badge tech-badge">ReactJS</span>
+              <span class="badge tech-badge">Next.js</span>
+              <span class="badge tech-badge">Google APIs</span>
+              <span class="badge tech-badge">Jira</span>
+            </div>
+            <p class="mb-0" style="font-size:1.08rem; color:#333; line-height:1.8;">Led a team of four to develop an AI-powered waste classification and reporting system promoting environmental sustainability. Using a custom-trained MobileNetV2 model, the system analyzes images to determine material composition percentages (plastic, organic, rubber, etc.) with high accuracy. Adopted Scrum methodology with Jira for sprint planning, task assignment, and progress tracking. Developed a FastAPI backend for scalable, real-time image analysis and supervised the React/Next.js frontend for a responsive user interface. Integrated Google APIs for secure data storage and automated reporting. The platform is designed for use by NGOs, municipalities, and smart city initiatives.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card End -->
+    </div>
+  </div>
+  <style>
+    .project-card {
+      animation: fadeInUp 0.7s cubic-bezier(.4,2,.6,1);
+    }
+    .project-title {
+      font-size: 3.2rem;
+      font-weight: 900;
+      color: #6a0dad;
+      letter-spacing: 1px;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+      margin-top: 1.2rem;
+      text-align: center;
+      word-break: break-word;
+      word-wrap: break-word;
+    }
+    .tech-badge {
+      font-weight: 800;
+      background: linear-gradient(90deg, #e0c3fc 0%, #f8e1f4 100%);
+      color: #6a0dad;
+      border: 2px solid #6a0dad;
+      border-radius: 1.5em;
+      padding: 0.5em 1.2em;
+      font-size: 1.08rem;
+      box-shadow: 0 2px 8px 0 rgba(106,13,173,0.10);
+      transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+      margin-bottom: 0.2em;
+      letter-spacing: 0.5px;
+      text-shadow: 0 1px 2px #fff8;
+      cursor: pointer;
+    }
+    .tech-badge:hover {
+      background: linear-gradient(90deg, #6a0dad 0%, #e0c3fc 100%);
+      color: #fff;
+      border-color: #6a0dad;
+      box-shadow: 0 4px 16px 0 rgba(106,13,173,0.18);
+    }
+    @media (max-width: 900px) {
+      .project-title { font-size: 2.1rem; }
+    }
+    @media (max-width: 700px) {
+      .project-card { padding: 1.5rem 0.7rem; min-height: 400px; }
+      .projects-section h2 { font-size: 1.5rem; }
+      .tech-badge { font-size: 0.98rem; padding: 0.4em 0.8em; }
+      .project-title { font-size: 1.2rem; margin-top: 0.7rem; margin-bottom: 0.7rem; }
+    }
+  </style>
+</section>
+<!-- project section end here -->
+
+    <!-- skill section starts -->
+      <section class="about-skills-section" id="about">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+          .about-skills-section {
+            background: linear-gradient(135deg, #f8e1f3 0%, #e0e7ff 100%);
+            padding: 100px 0 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+          }
+          .about-skills-title {
+            color: #222;
+            font-size: 2.7rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-family: 'Poppins', Arial, sans-serif;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+          .about-skills-subtitle {
+            color: #6a0dad;
+            font-size: 1.25rem;
+            margin-bottom: 3.5rem;
+            text-align: center;
+            font-family: 'Poppins', Arial, sans-serif;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+          }
+          .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2.5rem;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+          }
+          .skill-card {
+            background: #fff;
+            border-radius: 22px;
+            box-shadow: 0 6px 32px 0 rgba(106,13,173,0.08), 0 1.5px 6px 0 rgba(0,0,0,0.04);
+            padding: 3.2rem 2rem 2.2rem 2rem;
+            transition: box-shadow 0.25s, transform 0.22s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 320px;
+            position: relative;
+            overflow: hidden;
+          }
+          .skill-card:hover {
+            box-shadow: 0 12px 40px 0 rgba(106,13,173,0.18), 0 2px 8px 0 rgba(0,0,0,0.07);
+            transform: translateY(-8px) scale(1.035);
+          }
+          .skill-card h4 {
+            color: #6a0dad;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 1.3rem;
+            letter-spacing: 0.5px;
+            font-family: 'Poppins', Arial, sans-serif;
+            text-align: center;
+          }
+          .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #333;
+            font-size: 1.08rem;
+            font-family: 'Poppins', Arial, sans-serif;
+            font-weight: 400;
+          }
+          .skill-list li {
+            margin-bottom: 0.85rem;
+            padding-left: 0.2rem;
+            line-height: 1.7;
+            transition: color 0.18s;
+          }
+          .skill-card:hover .skill-list li {
+            color: #6a0dad;
+          }
+          @media (max-width: 1100px) {
+            .skills-grid {
+              max-width: 900px;
+              gap: 1.5rem;
+            }
+            .skill-card {
+              min-height: 260px;
+              padding: 2.2rem 1.2rem 1.5rem 1.2rem;
+            }
+          }
+          @media (max-width: 991px) {
+            .skills-grid { grid-template-columns: 1fr 1fr !important; gap: 1rem !important; }
+            .about-skills-title { font-size: 2rem !important; }
+          }
+          @media (max-width: 700px) {
+            .about-skills-section {
+              padding: 60px 0 60px 0;
+            }
+            .skills-grid {
+              grid-template-columns: 1fr !important; gap: 0.7rem !important;
+            }
+            .about-skills-title {
+              font-size: 1.2rem !important;
+            }
+            .skill-card {
+              padding: 1rem 0.7rem 0.7rem 0.7rem !important; min-height: 0 !important;
+            }
+          }
+        </style>
+        
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4 style="color: #6a0dad;">Languages</h4>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>C++</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: #6a0dad;">Frameworks</h4>
+            <ul class="skill-list">
+              <li>Waterfall</li>
+              <li>Scrum</li>
+              <li>Agile</li>
+              <li>Kanban</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: #6a0dad;">Tools</h4>
+            <ul class="skill-list">
+              <li>Jira</li>
+              <li>Trello</li>
+              <li>Clickup</li>
+              <li>Asana</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4 style="color: #6a0dad;">Soft Skills</h4>
+            <ul class="skill-list">
+              <li>Team Leadership</li>
+              <li>Communication</li>
+              <li>Project Planning</li>
+              <li>Event Management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- skill section end here -->
+
+      <!-- work experience section starts -->
+      <section class="work-experience py-5" id="work-experience">
+        <style>
+          .work-experience {
+            background: linear-gradient(120deg,#f8e1f4 0%,#e0c3fc 100%);
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+          }
+          .work-experience-title {
+            color: #6a0dad;
+            font-size: 3.2rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: 1.1;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            word-break: break-word;
+            word-wrap: break-word;
+          }
+          .work-experience-cards {
+            width: 100%;
+            max-width: 1700px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+          }
+          .work-card {
+            background: #fff;
+            border-radius: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(106,13,173,0.13), 0 2px 8px 0 rgba(0,0,0,0.07);
+            padding: 2.5rem 2.5rem 2rem 2.5rem;
+            min-height: 340px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            max-width: 600px;
+            width: 98vw;
+            margin: 0 auto;
+            transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+          }
+          .work-card:hover {
+            box-shadow: 0 12px 40px 0 rgba(106,13,173,0.18), 0 2px 8px 0 rgba(0,0,0,0.07);
+            transform: translateY(-8px) scale(1.035);
+          }
+          .work-card h4 {
+            color: #6a0dad;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.7rem;
+            letter-spacing: 0.5px;
+            text-align: center;
+          }
+          .work-card .company {
+            font-size: 1.15rem;
+            color: #222;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+            text-align: center;
+          }
+          .work-card .date {
+            font-size: 1.05rem;
+            color: #6a0dad;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            text-align: center;
+          }
+          .work-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            color: #333;
+            font-size: 1.08rem;
+            font-family: 'Poppins', Arial, sans-serif;
+            font-weight: 400;
+            width: 100%;
+          }
+          .work-card ul li {
+            margin-bottom: 0.85rem;
+            padding-left: 0;
+            line-height: 1.7;
+            transition: color 0.18s;
+            text-align: left;
+            position: relative;
+          }
+          .work-card ul li::before {
+            content: '';
+            display: none;
+          }
+          @media (max-width: 900px) {
+            .work-experience-title { font-size: 2.1rem; }
+            .work-card { padding: 1.5rem 0.7rem; min-height: 260px; }
+          }
+          @media (max-width: 700px) {
+            .work-experience { padding: 60px 0; }
+            .work-experience-cards { gap: 1.2rem; }
+            .work-card { padding: 1.2rem 0.7rem; min-height: 0; }
+            .work-experience-title { font-size: 1.2rem; }
+          }
+        </style>
+        <div class="container d-flex flex-column align-items-center justify-content-center" style="min-height: 80vh;">
+          <div class="work-experience-cards">
+            <div class="work-card">
+              <h4>Senior Event Manager & Organizer</h4>
+              <div class="company">NUTECH Student Council</div>
+              <div class="date">2023</div>
+              <ul>
+                <li>Organized event with 350+ attendees</li>
+                <li>Managed planning, logistics, and execution</li>
+                <li>Coordinated vendors, volunteers, and departments</li>
+                <li>Resolved real-time issues under pressure</li>
+                <li>Showcased leadership and teamwork</li>
+              </ul>
+            </div>
+            <!-- Add more work-card blocks here for additional jobs -->
+          </div>
+        </div>
+      </section>
+      <!-- work experience section end here -->
+     
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <style>
+        .contact {
+          background: linear-gradient(120deg,#f8e1f4 0%,#e0c3fc 100%), url('images/download.jpeg') center center/cover no-repeat;
+          background-blend-mode: lighten;
+        }
+        .contact-info-container {
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        .contact-info-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1.2rem;
+          gap: 1rem;
+        }
+        .contact-info-icon {
+          font-size: 1.8rem;
+          color: #6a0dad;
+        }
+        .contact-info-text {
+          font-size: 1.3rem;
+          font-weight: 800;
+          color: #3f396d;
+          letter-spacing: 0.5px;
+        }
+        @media (max-width: 768px) {
+          .contact-info-text {
+            font-size: 1.1rem;
+          }
+        }
+      </style>
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="contact-info-container">
+              <div class="contact-info-item">
+                <i class="bi bi-telephone-fill contact-info-icon"></i>
+                <span class="contact-info-text">+92 3211773943</span>
+              </div>
+              <div class="contact-info-item">
+                <i class="bi bi-send-fill contact-info-icon"></i>
+                <span class="contact-info-text">muhammadhafeezurrrehman77@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-8 d-flex flex-column align-items-center" data-aos="slide-left">
+            <div class="contact-form w-100 d-flex flex-column align-items-center">
+              <div class="mb-3 w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="E-mail"
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Mobile No."
+                />
+              </div>
+              <div class="mb-3 w-100">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Message"
+                  rows="5"
+                ></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill mx-auto" style="display:block;">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .contact-form {
+          align-items: center;
+        }
+        .contact-form .form-control {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .contact-form button {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">Project</a>
+        <div class="vr"></div>
+        <a href="#service">Skills</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Work Experience</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-github"></i> 
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
